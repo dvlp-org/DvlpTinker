@@ -1,12 +1,9 @@
-热更新-Bugly-Tinker集成一篇足够
-彭于晏  DvlpNews  今天
-
-
+>微信公众号：**[DvlpNews](#jump_10)**
 状态：近期天气炎热影响欧巴心情，感觉每一天都不适合工作只想撩妹（坏笑），由于UI妹子大概太迷恋我了（这里添加无奈的表情），很多文案处处给我藏情，以至于上线得到很多领导对我的慰问。让我甚是稀罕UI小姐姐（笔芯小手势）。
+**[如果你觉得有帮助，欢迎star](#jump_20)[^1]**
 
 
-
-1.主要目的》
+`1.主要目的》`
 
 那我们该如何表白UI小姐姐呢？呸...那我们该如何在不发版本的情况下解决线上文案错误的问题呢？这里选择 “热跟新”
 
@@ -16,10 +13,9 @@
 
 
 
-2.集成开始
-
-第一步，配置app下gradle
-
+`2.集成开始`
+`第一步，配置app下gradle`
+```
 defaultConfig节点添加以下 第一处-----------
     multiDexEnabled true
     ndk {
@@ -38,12 +34,13 @@ dependencies 节点添加以下引用 第二处-----------
 gradle文件最下面 引入插件  第三处-----------
     // 依赖插件脚本
     apply from: 'tinker-support.gradle'
+```
 备注：app目录下需要添加tinker-support.gradle文件（文章最后面）
 
 
 
 第二步，初始化
-
+```
 public class MyApplication extends Application {
     @Override
     public void onCreate() {
@@ -63,10 +60,10 @@ public class MyApplication extends Application {
         Beta.installTinker();
     }
 }
-
+```
 
 第三步，添加权限
-
+```
 //添加权限 第一处-----------
  <uses-permission android:name="android.permission.READ_PHONE_STATE" />
     <uses-permission android:name="android.permission.INTERNET" />
@@ -86,6 +83,7 @@ public class MyApplication extends Application {
             android:name="com.tencent.bugly.beta.ui.BetaActivity"
             android:configChanges="keyboardHidden|orientation|screenSize|locale"
             android:theme="@android:style/Theme.Translucent" />
+```
 按照官方到这里就算结束了。很多会问 难道没有《坑》？
 
 答案很显然的了，忽略了签名的配置。签名一定要配置，配置，配置（重要事说三遍）。签名配置并不是本篇文章要讲解的，可以上网查下，或者看下demo。
@@ -118,27 +116,28 @@ public class MyApplication extends Application {
 
 例如基本包名字之前是DvlpNews
 
-
+```
 <resources>
     <string name="app_name">DvlpNews</string>
 </resources>
-
+```
 
 修改之后
 
-
+```
 <resources>
     <string name="app_name">我稀罕你</string>
 </resources>
+```
 修改需要变更内容之后，开始正式打补丁包
 
 
 
 修改tinker-support.gradle文件内容
-
+```
 def baseApkDir = "app-0710-18-38-23"//要修改成编译生成的包名
 tinkerId = "6.6.6" //这个任意，保证每次打包唯一就行
-
+```
 
 执行构建补丁包的task
 
@@ -190,21 +189,15 @@ https://bugly.qq.com/docs/user-guide/instruction-manual-android-hotfix-demo/?v=2
 
 demo地址 欢迎star：
 
-https://github.com/dvlp-org/DvlpTinker.git  
+https://github.com/dvlp-org/DvlpTinker.git
 
 
 
 提示：公众回复“ 热更新地址” 支持链接跳转.......
 
-
-
-本次项目为 热更新测试集成项目，集成过程进行简单记录，有可能在正式项目接入中存在差异，例如多渠道等等....
-
-集成中有遇到问题，请以官方文档为准。当然也可以文章留言区记录，或者公众号内提问....
-
-
-
-看到这里了......有没有人关心我和UI妹子最后怎样？？？
+>微信公众号：**[DvlpNews](#jump_10)**
+本次项目为 热更新测试集成项目，集成过程进行简单记录，有可能在正式项目接入中存在差异，例如多渠道等等...集成中有遇到问题，请以官方文档为准。当然也可以文章留言区记录，或者公众号内提问。
+看到这里了......有没有人关心我和UI妹子最后怎样？？？。
 
 
 
@@ -212,6 +205,13 @@ https://github.com/dvlp-org/DvlpTinker.git
 
 
 
+
+<p style="text-align:center;color:#1e819e;font-size:1.3em;font-weight: bold;">
 关注『DvlpNews』
-
+<br/>
 把握前沿技术脉搏
+</p>
+
+
+
+
