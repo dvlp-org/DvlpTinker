@@ -94,10 +94,12 @@ public class MyApplication extends Application {
 
 第一步，打上线apk（基本包）
 
+![image](https://github.com/dvlp-org/DvlpTinker/tree/master/app/src/main/res/raw/t1.jpg)
 
 
 成功之后会在build/outputs/bakApk路径下生成每次编译的基准包、混淆配置文件、资源Id文件，有可能也会没有mapping文件，如下图所示：
 
+![image](https://github.com/dvlp-org/DvlpTinker/tree/master/app/src/main/res/raw/t2.jpg)
 
 
 备注：请留意 编译每次生成的报名 app-0209-16-24-07(补丁包需要这个)
@@ -141,13 +143,17 @@ tinkerId = "6.6.6" //这个任意，保证每次打包唯一就行
 
 执行构建补丁包的task
 
+![image](https://github.com/dvlp-org/DvlpTinker/tree/master/app/src/main/res/raw/t6.jpg)
 
 
 生成的补丁包在build/outputs/patch目录下：
 
+![image](https://github.com/dvlp-org/DvlpTinker/tree/master/app/src/main/res/raw/t3.jpg)
 
 
 上传补丁包到平台并下发编辑规则 （地址放在文章后面）
+![image](https://github.com/dvlp-org/DvlpTinker/tree/master/app/src/main/res/raw/t4.jpg)
+![image](https://github.com/dvlp-org/DvlpTinker/tree/master/app/src/main/res/raw/t5.jpg)
 
 
 
@@ -157,6 +163,7 @@ tinkerId = "6.6.6" //这个任意，保证每次打包唯一就行
 
 最终效果
 
+![image](https://github.com/dvlp-org/DvlpTinker/tree/master/app/src/main/res/raw/t7.jpg)
 
 
 
@@ -207,11 +214,9 @@ https://github.com/dvlp-org/DvlpTinker.git
 
 
 <p style="text-align:center;color:#1e819e;font-size:1.3em;font-weight: bold;">
-关注『DvlpNews』
-<br/>
-把握前沿技术脉搏
+![image](https://github.com/dvlp-org/DvlpTinker/tree/master/app/src/main/res/raw/code-2.jpg)
 </p>
 
-![image](https://mmbiz.qpic.cn/mmbiz_png/RYRNSQaib75cIZX82v4ajLz7vxHngZRqJHicc4uZdW1hkUEQ2icLdgLc0XfvBOeho4yC3ZUJicHH9icw6vDiapYYmLnQ/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1)
+
 
 
