@@ -214,9 +214,9 @@ https://github.com/dvlp-org/DvlpTinker.git
 
 
 <p style="text-align:center;color:#1e819e;font-size:1.3em;font-weight: bold;">
-![image](https://github.com/dvlp-org/DvlpTinker/tree/master/app/src/main/res/raw/code-2.jpg)
 </p>
 
+![image](https://github.com/dvlp-org/DvlpTinker/tree/master/app/src/main/res/raw/code-2.jpg)
 
 
 
