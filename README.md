@@ -212,6 +212,6 @@ https://github.com/dvlp-org/DvlpTinker.git
 把握前沿技术脉搏
 </p>
 
-![image](https://github.com/dvlp-org/DvlpTinker/blob/master/app/src/main/res/mipmap-hdpi/ic_launcher.png)
+![image](https://mmbiz.qpic.cn/mmbiz_png/RYRNSQaib75cIZX82v4ajLz7vxHngZRqJHicc4uZdW1hkUEQ2icLdgLc0XfvBOeho4yC3ZUJicHH9icw6vDiapYYmLnQ/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1)
 
 
