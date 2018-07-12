@@ -98,11 +98,10 @@ public class MyApplication extends Application {
 
 第一步，打上线apk（基本包）
 
-![image](https://github.com/dvlp-org/DvlpTinker/tree/master/app/src/main/res/raw/t1.jpg?raw=true)
-
+![image](https://github.com/dvlp-org/DvlpTinker/blob/master/app/src/main/res/raw/t1.jpg?raw=true)
 成功之后会在build/outputs/bakApk路径下生成每次编译的基准包、混淆配置文件、资源Id文件，有可能也会没有mapping文件，如下图所示：
 
-![image](https://github.com/dvlp-org/DvlpTinker/tree/master/app/src/main/res/raw/t2.jpg?raw=true)
+![image](https://github.com/dvlp-org/DvlpTinker/blob/master/app/src/main/res/raw/t2.jpg?raw=true)
 
 
 备注：请留意 编译每次生成的报名 app-0209-16-24-07(补丁包需要这个)
@@ -146,17 +145,17 @@ tinkerId = "6.6.6" //这个任意，保证每次打包唯一就行
 
 执行构建补丁包的task
 
-![image](https://github.com/dvlp-org/DvlpTinker/tree/master/app/src/main/res/raw/t6.jpg?raw=true)
+![image](https://github.com/dvlp-org/DvlpTinker/blob/master/app/src/main/res/raw/t6.jpg?raw=true)
 
 
 生成的补丁包在build/outputs/patch目录下：
 
-![image](https://github.com/dvlp-org/DvlpTinker/tree/master/app/src/main/res/raw/t3.jpg?raw=true)
+![image](https://github.com/dvlp-org/DvlpTinker/blob/master/app/src/main/res/raw/t3.jpg?raw=true)
 
 
 上传补丁包到平台并下发编辑规则 （地址放在文章后面）
-![image](https://github.com/dvlp-org/DvlpTinker/tree/master/app/src/main/res/raw/t4.jpg?raw=true)
-![image](https://github.com/dvlp-org/DvlpTinker/tree/master/app/src/main/res/raw/t5.jpg?raw=true)
+![image](https://github.com/dvlp-org/DvlpTinker/blob/master/app/src/main/res/raw/t4.jpg?raw=true)
+![image](https://github.com/dvlp-org/DvlpTinker/blob/master/app/src/main/res/raw/t5.jpg?raw=true)
 
 
 
@@ -166,7 +165,7 @@ tinkerId = "6.6.6" //这个任意，保证每次打包唯一就行
 
 最终效果
 
-![image](https://github.com/dvlp-org/DvlpTinker/tree/master/app/src/main/res/raw/t7.jpg?raw=true)
+![image](https://github.com/dvlp-org/DvlpTinker/blob/master/app/src/main/res/raw/t7.jpg?raw=true)
 
 
 
