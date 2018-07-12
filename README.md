@@ -155,7 +155,6 @@ tinkerId = "6.6.6" //这个任意，保证每次打包唯一就行
 
 上传补丁包到平台并下发编辑规则 （地址放在文章后面）
 ![image](https://github.com/dvlp-org/DvlpTinker/blob/master/app/src/main/res/raw/t4.jpg?raw=true)
-![image](https://github.com/dvlp-org/DvlpTinker/blob/master/app/src/main/res/raw/t5.jpg?raw=true)
 
 
 
