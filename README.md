@@ -1,6 +1,9 @@
+![image](https://github.com/dvlp-org/DvlpTinker/blob/master/app/src/main/res/raw/banner.jpg?raw=true)
+
 微信版集成文档：
 
 https://mp.weixin.qq.com/s/9RPsUzcI8ZFheHdhU2C4tg
+
 
 >微信公众号：**[DvlpNews](#jump_10)**
 状态：近期天气炎热影响欧巴心情，感觉每一天都不适合工作只想撩妹（坏笑），由于UI妹子大概太迷恋我了（这里添加无奈的表情），很多文案处处给我藏情，以至于上线得到很多领导对我的慰问。让我甚是稀罕UI小姐姐（笔芯小手势）。
