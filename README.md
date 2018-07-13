@@ -221,7 +221,7 @@ https://github.com/dvlp-org/DvlpTinker.git
 </p>
 
 
-![image](https://raw.githubusercontent.com/dvlp-org/DvlpTinker/master/app/src/main/res/raw/code-2.jpg?raw=true)
+![image](https://raw.githubusercontent.com/dvlp-org/DvlpTinker/master/app/src/main/res/raw/code_2.jpg?raw=true)
 
 
 
