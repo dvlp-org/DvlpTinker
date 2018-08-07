@@ -17,6 +17,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:name=".MyApplication"
+        android:enabled="true"
         android:theme="@style/AppTheme">
         <activity android:name=".MainActivity">
             <intent-filter>
@@ -29,6 +30,18 @@
             android:name="com.tencent.bugly.beta.ui.BetaActivity"
             android:configChanges="keyboardHidden|orientation|screenSize|locale"
             android:theme="@android:style/Theme.Translucent" />
+        <activity android:name=".wxapi.WXEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <!--处理applicationId与包名不一致问题-->
+        <activity-alias
+            android:name="${applicationId}.wxapi.WXEntryActivity"
+            android:exported="true"
+            android:targetActivity=".wxapi.WXEntryActivity" />
         <!-- name：组件名字 -->
         <!-- enabled：该组件是否启动 -->
         <!-- icon：组件图标 -->
@@ -47,6 +60,21 @@
 
             <category android:name="android.intent.category.LAUNCHER" />
         </intent-filter>
+        </activity-alias>
+
+        <activity-alias
+            android:name=".MainActivity3"
+            android:enabled="false"
+            android:icon="@mipmap/icon2"
+            android:roundIcon="@mipmap/ic_launcher_round"
+
+            android:label="newIcon"
+            android:targetActivity=".MainActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity-alias>
 
     </application>
