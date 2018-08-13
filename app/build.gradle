@@ -66,3 +66,23 @@ dependencies {
 
 // 依赖插件脚本
 apply from: 'tinker-support.gradle'
+
+
+
+//打jar包使用，只能放在model gradle里面，本片文章里不用
+//https://blog.csdn.net/g777520/article/details/53331797
+//task to delete the old jar
+task deleteOldJar(type: Delete) {
+    delete 'release/AndroidPlugin.jar'
+}
+
+//task to export contents as jar
+task exportJar(type: Copy) {
+    from('build/intermediates/bundles/release/')
+    into('release/')
+    include('classes.jar')
+    ///Rename the jar
+    rename('classes.jar', 'AndroidPlugin.jar')
+}
+
+exportJar.dependsOn(deleteOldJar, build)

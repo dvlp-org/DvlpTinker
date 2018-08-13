@@ -1,8 +1,10 @@
 package news.dvlp.testtinker;
 
 import android.content.ComponentName;
+import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageManager;
+import android.content.pm.ResolveInfo;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -12,6 +14,8 @@ import android.widget.Toast;
 import com.tencent.mm.opensdk.modelmsg.SendAuth;
 import com.tencent.mm.opensdk.openapi.IWXAPI;
 import com.tencent.mm.opensdk.openapi.WXAPIFactory;
+
+import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -36,7 +40,7 @@ public class MainActivity extends AppCompatActivity {
         ((Button)findViewById(R.id.btn2)).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                WXLogin();
+                changeIcon2();
             }
         });
     }
@@ -72,6 +76,43 @@ public class MainActivity extends AppCompatActivity {
                 PackageManager.DONT_KILL_APP);
     }
 
+
+
+    public static void openNoLauncherApk(String packageName,Context context) {
+        PackageManager packageManager = context.getPackageManager();
+        try {
+            Intent intent = new Intent(Intent.ACTION_MAIN);
+            intent.addCategory(Intent.CATEGORY_DEFAULT);
+            intent.addCategory(packageName);
+
+            List<ResolveInfo> resolveInfos = packageManager.queryIntentActivities(intent,
+                    PackageManager.MATCH_ALL);
+
+            for (ResolveInfo resolveInfo : resolveInfos){
+                if (resolveInfo.activityInfo.packageName.equals(packageName)){
+                    Intent intent1 = new Intent();
+                    ComponentName componet = new ComponentName(resolveInfo.activityInfo.packageName,
+                            resolveInfo.activityInfo.name);
+                    intent1.setComponent(componet);
+                    context.startActivity(intent1);
+                }
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
     /**
      * 登录微信
      */
@@ -87,4 +128,6 @@ public class MainActivity extends AppCompatActivity {
         WXapi.sendReq(req);
 
     }
+
+
 }
